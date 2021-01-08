@@ -1,0 +1,14 @@
+body
+{
+    background-color: #36393f;
+}
+.embed
+{
+    background-color: #2f3136 ;
+    color: white;
+}
+.embed:focus{
+    background-color:#2f3136;
+    color: white;
+    outline: none;
+}
