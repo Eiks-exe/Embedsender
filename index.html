@@ -11,55 +11,61 @@
 <body class="container">
     <div class=""></div>
     <div class="col-sm-12 mt-5">
-        <div class="row mb-5">
-            <img src="https://cdn.discordapp.com/attachments/759679730987040811/797176880394010695/unknown.png" class="rounded-circle m-0 col-sm-3" style="width:10%;">
+        <div class="row mb-3">
+            <img src="https://cdn.discordapp.com/attachments/759679730987040811/797176880394010695/unknown.png" class="rounded-circle m-0 col-sm-3" style="width:10%; height: 10%;">
             <div class="col-sm-3 h1 text-white align-item-end">
                 send your embed
             </div>
         </div>
         
         <div class="col-sm-12 d-flex align-middle">
-            <div class="bg-primary col-sm-1 rounded-start " style="width: 1%;">
-                   
+            <div id="embedcolor" class="col-sm-1 rounded-start " style="width: 1%;">
+                
             </div>
-            <div class="col-sm-12 w-100">
+            <div  class="col-sm-12 w-100">
                 <div class="col-sm-12 text-white center rounded-end d-flex flex-column justify-content-center embed align-item-start p-3">
                     <form>
                         <div class=" mb-3 col">
-                            <label for="WebHook" class="form-label h4">WebHook's Url *</label>
+                            <label for="WebHook" class="form-label h5">WebHook's Url *</label>
                             <input id="WebHook" type="text" placeholder="https://example.com" aria-label="Title" aria-describedby="basic-addon1" class="form-control embed" value="" required>
                         </div>
                         <span id="demo"></span>
                         <div class=" mb-3 col">
-                            <label for="urlmsg" class="form-label h4">Title *</label>
+                            <label for="urlmsg" class="form-label h5">Title *</label>
                             <input id="Title" type="text" class="form-control embed " placeholder="Title" aria-label="Title" aria-describedby="basic-addon1" value="">
                         </div>
                         
                         <div class="mb-3">
-                            <label for="Messagelinks" class="form-label h4">Message's links</label>
+                            <label for="Messagelinks" class="form-label h5">Message's links</label>
                             <input id="Messagelinks" type="text" class="form-control embed" placeholder="https://example.com" aria-label="Title" aria-describedby="basic-addon1" value="">
                         </div>
                         
                         <div class="mb-3">
-                            <label for="Content" class="form-label h4">Content *</label>
+                            <label for="Content" class="form-label h5">Content *</label>
                             <textarea id="Content" class="form-control embed" placeholder="write the content of your message" rows="3" required></textarea>
                         </div>
                         
                         <div class="mb-3">
-                            <label for="Thumbnail" class="form-label h4">Thumbnail's Url</label>
+                            <label for="Thumbnail" class="form-label h5">Thumbnail's Url</label>
                             <input id="Thumbnail" type="text" class="form-control embed" placeholder="https://example.com" aria-label="Title" aria-describedby="basic-addon1" value="">
                         </div>
 
                         <div class="mb-3">
-                            <label for="Image" class="form-label h4">Image's Url</label>
+                            <label for="Image" class="form-label h5">Image's Url</label>
                             <input id="Image" type="text" class="form-control embed" placeholder="https://example.com" aria-label="Title" aria-describedby="basic-addon1" value="">
                         </div>
                     </form>
-                    <button type="button" class="btn btn-primary" onclick="sendMessage()">send your embed</button>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <label for="colorpicker" class="form-label h6"><span>color :</span></label>
+                            <input id="colorpicker" type="color" class="col-sm-12" value="#0377fc" style="height: 40px;">
+                        </div>
+                        <button type="button" class="col-sm-3 btn btn-primary justify-content-center" onclick="sendMessage()" style="">send your embed</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <a href="https://eiks-exe.github.io/" class="text-white">by eiks</a>
+    <a href="https://eiks-exe.github.io/" class="text-white mb-5" >by eiks</a>
 </body>
 </html>
