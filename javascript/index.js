@@ -28,8 +28,10 @@ async function avatarChange(e){
           var img = document.querySelector('img')
           var name = document.querySelector('#Whooktitle')
           
-          img.src = `https://cdn.discordapp.com/avatars/${id}/${avatar}`
-          name.innerHTML = out.name
+          if(id && avatar){
+            img.src = `https://cdn.discordapp.com/avatars/${id}/${avatar}`
+            name.innerHTML = out.name
+          }
       }).catch(err => console.error(err)); 
 }
 async function sendMessage() {
